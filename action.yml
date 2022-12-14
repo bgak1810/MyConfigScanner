@@ -3,4 +3,4 @@ description: 'reads the configuration of hardcoded values in all pages'
 
 runs:
   using: 'node16'
-  main: 'index.js'
+  main: 'dist/index.js'
