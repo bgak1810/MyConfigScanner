@@ -4,8 +4,8 @@ const github = require('@actions/github');
 const main = async () => {
   try   
     {
-        const organizationame = core.getInput('owner', { required: true });
-        const repositoryname = core.getInput('repo', { required: true });
+        const organizationame = core.getInput('owner');
+        const repositoryname = core.getInput('repo');
 		const projectname ="project";
 		const personaltoken = "token";
 

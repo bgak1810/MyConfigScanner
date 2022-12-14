@@ -1,0 +1,17 @@
+name: Configscanner Action
+
+on: 
+  pull_request:
+    types: [opened, reopened, synchronize]
+
+jobs:
+
+  annotate-pr:
+    runs-on: windows-latest
+    name: Reads all the files with hardcoded values
+    steps:
+      - name: Execute to read the pages
+        uses: ./
+        with:
+          owner: ${{ github.repository_owner }}
+          repo: ${{ github.event.repository.name }}
