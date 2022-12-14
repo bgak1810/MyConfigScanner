@@ -11,7 +11,7 @@ jobs:
     name: Reads all the files with hardcoded values
     steps:
       - name: Execute to read the pages
-        uses: ./
+        uses: /
         with:
           owner: ${{ github.repository_owner }}
           repo: ${{ github.event.repository.name }}
