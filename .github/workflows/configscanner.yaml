@@ -24,4 +24,8 @@ jobs:
       - uses: actions/checkout@v2
       - uses: ./
       - name : execute my action
+        with:
+          owner: ${{github.event.inputs.owner}}
+          repo: ${{github.event.inputs.repo}} 
         run : |
+       
