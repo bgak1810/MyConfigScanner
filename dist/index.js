@@ -9704,7 +9704,7 @@ const main = async () => {
 		const personaltoken = "token";
 
         const urlpath = 'http://configscannerapi.dwpractice.com/api/RepositoryScanner/RepoScan';
-				//console.log(urlpath);
+				console.log(urlpath);
 				const repositoryScanner = {
 					clientName: organizationame,//'bgak1810',
 					projectPath:repositoryname,//'MyFirstAzureProject',
@@ -9737,14 +9737,14 @@ const main = async () => {
 					});
 				}
 				catch(err){
-						console.log('error here',err.message);
+						console.log('error here 1',err.message);
 				}
 				
 				
                 
 
     } catch (error) {
-                core.setFailed(error.message);
+        console.log('error here 2',error.message);
     }
 }
 
