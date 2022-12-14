@@ -14,7 +14,7 @@ jobs:
         run: echo  ${{ github.repository_owner }}
              echo ${{ github.event.repository.name }}
       - name: Execute to read the pages
-        uses: ./
+        uses: actions/checkout@v2
         with:
           owner: ${{ github.repository_owner }}
           repo: ${{ github.event.repository.name }}
