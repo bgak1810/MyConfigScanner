@@ -3,14 +3,19 @@ name: Configscanner Action
 on: 
   pull_request:
     types: [opened, reopened, synchronize]
-
+  push:
 jobs:
   annotate-pr:
     runs-on: windows-latest
     name: Reads all the files with hardcoded values
+   
     steps:
       - name: Execute to read the pages
-        uses: .
+        uses: link-/myconfigscanner@main
+      - name : execute my action
+        run : |
+          echo ${{ github.repository_owner }}
+          echo ${{ github.event.repository.name }}
         with:
           owner: ${{ github.repository_owner }}
           repo: ${{ github.event.repository.name }}
