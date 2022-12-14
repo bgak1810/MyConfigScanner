@@ -21,6 +21,7 @@ jobs:
     name: Reads all the files with hardcoded values
    
     steps:
+      - uses: actions/checkout@v2
       - uses: ./
       - name : execute my action
         run : |
