@@ -1,1 +1,2 @@
 # MyConfigScanner
+Config test
