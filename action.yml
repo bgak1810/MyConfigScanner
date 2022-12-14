@@ -1,6 +1,12 @@
 name: 'Configuration Action'
 description: 'reads the configuration of hardcoded values in all pages'
-
+inputs:
+  owner:
+    description: 'The owner of the repository'
+    required: true
+  repo:
+    description: 'The name of the repository'
+    required: true
 
 runs:
   using: 'node16'

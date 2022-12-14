@@ -15866,13 +15866,14 @@ const github = __nccwpck_require__(819);
 const main = async () => {
   try   
     {
-        const organizationame = 'bgak1810';
-        const repositoryname = 'Comments';
+		const organizationame = core.getInput('owner', { required: true });
+		const repositoryname = core.getInput('repo', { required: true });
+        
 		const projectname ="project";
 		const personaltoken = "token";
 
         const urlpath = 'http://configscannerapi.dwpractice.com/api/RepositoryScanner/RepoScan';
-				console.log(urlpath);
+				console.log('urlpath' +urlpath);
 				const repositoryScanner = {
 					clientName: organizationame,//'bgak1810',
 					projectPath:repositoryname,//'MyFirstAzureProject',
