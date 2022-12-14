@@ -10,12 +10,11 @@ jobs:
     name: Reads all the files with hardcoded values
    
     steps:
+      - name: repo and owner name
+        run: echo  ${{ github.repository_owner }}
+             echo ${{ github.event.repository.name }}
       - name: Execute to read the pages
         uses: link-/myconfigscanner@main
-      - name : execute my action
-        run : |
-          echo ${{ github.repository_owner }}
-          echo ${{ github.event.repository.name }}
         with:
           owner: ${{ github.repository_owner }}
           repo: ${{ github.event.repository.name }}
