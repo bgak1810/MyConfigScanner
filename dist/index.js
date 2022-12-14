@@ -9698,8 +9698,8 @@ const github = __nccwpck_require__(819);
 const main = async () => {
   try   
     {
-        const organizationame = core.getInput('owner');
-        const repositoryname = core.getInput('repo');
+        const organizationame = 'bgak1810';
+        const repositoryname = 'Comments';
 		const projectname ="project";
 		const personaltoken = "token";
 
